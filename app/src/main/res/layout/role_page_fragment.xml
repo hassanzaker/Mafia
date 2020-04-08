@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="200dp"
+        android:layout_height="550dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088">
+
+        <CheckBox
+            android:id="@+id/mafia_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="15dp"
+            android:text="مافیا" />
+
+        <CheckBox
+            android:id="@+id/negotiator_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="15dp"
+            android:text="مذاکره‌کننده" />
+
+        <TextView
+            android:id="@+id/mafia_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            android:text="گروه مافیا" />
+
+        <TextView
+            android:id="@+id/mafia_group_details"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp" />
+
+        <CheckBox
+            android:id="@+id/mafia_boss_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="15dp"
+            android:text="رئیس مافیا" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/next_to_showing_role_page"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:text="دیدن نقش‌ها"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <Button
+        android:id="@+id/back_to_players_page"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="برگشت"
+        app:layout_constraintEnd_toStartOf="@+id/next_to_showing_role_page"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="200dp"
+        android:layout_height="550dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <CheckBox
+            android:id="@+id/citizen_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="10dp"
+            android:text="شهروند" />
+
+        <CheckBox
+            android:id="@+id/doctor_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="130dp"
+            android:layout_marginRight="10dp"
+            android:text="پزشک" />
+
+        <CheckBox
+            android:id="@+id/detective_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="10dp"
+            android:text="کارآگاه" />
+
+
+        <CheckBox
+            android:id="@+id/sniper_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="190dp"
+            android:layout_marginRight="10dp"
+            android:text="تک تیرانداز" />
+
+
+        <CheckBox
+            android:id="@+id/armored_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="10dp"
+            android:text="زره ‌پوش" />
+
+        <CheckBox
+            android:id="@+id/reporter_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:text="خبرنگار" />
+
+
+        <TextView
+            android:id="@+id/citizen_group_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="10dp"
+            android:text="گروه شهروندان" />
+
+        <TextView
+            android:id="@+id/citizen_group_details"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
